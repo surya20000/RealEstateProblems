@@ -15,7 +15,7 @@ const ListProblems = () => {
   const handleSubmit = async () => {
     try {
       const res = await axios.post(
-        `http://localhost:300/api/user/getProblems`,
+        `https://realestateproblems-2.onrender.com/api/user/getProblems/`,
         formData
       );
       setAllProblems(res.data.allProblems);

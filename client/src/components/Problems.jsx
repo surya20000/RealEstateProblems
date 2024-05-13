@@ -21,7 +21,10 @@ const Problems = () => {
       setMotionVisible(true);
       e.preventDefault();
       await axios
-        .post(`http://localhost:300/api/user/postProblems`, formData)
+        .post(
+          `https://realestateproblems-2.onrender.com/api/user/postProblems`,
+          formData
+        )
         .then((res) => {
           console.log(res);
           setIsLoading(false);
